@@ -96,4 +96,3 @@ resource "aws_instance" "ec2" {
 output "private_ips" {
   value = { for k, inst in aws_instance.ec2 : k => inst.private_ip }
 }
- 
